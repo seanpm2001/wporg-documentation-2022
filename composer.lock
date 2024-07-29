@@ -296,15 +296,15 @@
         },
         {
             "name": "wpackagist-plugin/bbpress",
-            "version": "2.6.9",
+            "version": "2.6.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/bbpress/",
-                "reference": "tags/2.6.9"
+                "reference": "tags/2.6.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/bbpress.2.6.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/bbpress.2.6.11.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "18.6.1",
+            "version": "18.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/18.6.1"
+                "reference": "tags/18.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.18.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.18.8.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -332,15 +332,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "13.5",
+            "version": "13.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/13.5"
+                "reference": "tags/13.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.13.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.13.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "7078b00d24f480d1189bb37a90a93169640a827c"
+                "reference": "f37df015476665b351d1928c6a5a7da7a7503517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/7078b00d24f480d1189bb37a90a93169640a827c",
-                "reference": "7078b00d24f480d1189bb37a90a93169640a827c",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/f37df015476665b351d1928c6a5a7da7a7503517",
+                "reference": "f37df015476665b351d1928c6a5a7da7a7503517",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2024-06-24T19:28:05+00:00"
+            "time": "2024-07-25T01:53:30+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -444,12 +444,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "a68dfa6912340a9d7f695b50d1b9a14209e46cf6"
+                "reference": "86f1594c0ee71bfc0ce86930f36170ec5871fecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/a68dfa6912340a9d7f695b50d1b9a14209e46cf6",
-                "reference": "a68dfa6912340a9d7f695b50d1b9a14209e46cf6",
+                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/86f1594c0ee71bfc0ce86930f36170ec5871fecc",
+                "reference": "86f1594c0ee71bfc0ce86930f36170ec5871fecc",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -457,7 +457,7 @@
                 "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
                 "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
             },
-            "time": "2024-06-24T19:27:45+00:00"
+            "time": "2024-07-09T23:11:35+00:00"
         },
         {
             "name": "wporg/wporg-repo-tools",
@@ -2395,16 +2395,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.10.1",
+            "version": "3.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "8f90f7a53ce271935282967f53d0894f8f1ff877"
+                "reference": "86e5f5dd9a840c46810ebe5ff1885581c42a3017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/8f90f7a53ce271935282967f53d0894f8f1ff877",
-                "reference": "8f90f7a53ce271935282967f53d0894f8f1ff877",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/86e5f5dd9a840c46810ebe5ff1885581c42a3017",
+                "reference": "86e5f5dd9a840c46810ebe5ff1885581c42a3017",
                 "shasum": ""
             },
             "require": {
@@ -2471,7 +2471,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-05-22T21:24:41+00:00"
+            "time": "2024-07-21T23:26:44+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -2634,7 +2634,7 @@
         },
         {
             "name": "wp-phpunit/wp-phpunit",
-            "version": "5.9.9",
+            "version": "5.9.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-phpunit/wp-phpunit.git",

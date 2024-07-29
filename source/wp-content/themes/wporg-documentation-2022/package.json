@@ -7,8 +7,8 @@
 	"private": true,
 	"dependencies": {},
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "19.2.0",
-		"@wordpress/scripts": "27.9.0"
+		"@wordpress/eslint-plugin": "20.1.0",
+		"@wordpress/scripts": "28.4.0"
 	},
 	"eslintConfig": {
 		"extends": "../../../../.eslintrc.js"
