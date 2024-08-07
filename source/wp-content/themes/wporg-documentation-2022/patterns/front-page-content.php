@@ -112,7 +112,7 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"small"} -->
-				<p class="has-small-font-size">Everything you need to know to protect your site.</p>
+				<p class="has-small-font-size">Everything you need to know to protect your site, from password best practices to privacy.</p>
 				<!-- /wp:paragraph -->
 			</a>
 			<!-- /wp:wporg/link-wrapper -->
