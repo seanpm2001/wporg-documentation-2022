@@ -343,6 +343,9 @@ function custom_open_graph_tags( $tags = [] ) {
 			'twitter:card'    => 'summary_large_image',
 			'twitter:creator' => '@WordPress',
 		);
+	} else if ( is_category() ) {
+		$tags['og:image'] = 'https://wordpress.org/files/2022/08/embed-image.png';
+		return $tags;
 	}
 
 	$post = get_post();
@@ -352,6 +355,14 @@ function custom_open_graph_tags( $tags = [] ) {
 
 	$title = get_the_title();
 	$desc  = get_the_excerpt();
+
+	if ( is_page() ) {
+		$term_slug = ( 'overview' === $post->post_name ) ? 'wordpress-overview' : $post->post_name;
+		$term = get_term_by( 'slug', $term_slug, 'category' );
+		if ( $term ) {
+			$desc = trim( strip_tags( term_description( $term->term_id ) ) );
+		}
+	}
 
 	$tags['og:title']            = $title;
 	$tags['twitter:text:title']  = $title;
