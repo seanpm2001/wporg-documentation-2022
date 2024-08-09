@@ -10,6 +10,7 @@ use WP_Block_Supports;
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_filter( 'wporg_block_site_breadcrumbs', __NAMESPACE__ . '\set_site_breadcrumbs' );
 add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts' );
+add_filter( 'query_loop_block_query_vars', __NAMESPACE__ . '\modify_query_loop_block_query_vars', 10, 2 );
 add_filter( 'comment_form_defaults', __NAMESPACE__ . '\comment_form_defaults' );
 add_filter( 'comment_form_field_comment', __NAMESPACE__ . '\hide_field_after_submission' );
 add_filter( 'comment_form_submit_field', __NAMESPACE__ . '\hide_field_after_submission' );
@@ -134,8 +135,33 @@ function pre_get_posts( $query ) {
 	// Show many articles on the archive pages.
 	if ( ! $query->is_singular() ) {
 		$query->set( 'posts_per_page', 50 );
-		$query->set( 'orderby', 'menu_order post_title' );
+		$query->set(
+			'orderby',
+			array(
+				'menu_order' => 'desc',
+				'title' => 'asc',
+			)
+		);
 	}
+}
+
+/**
+ * Override the Query Loop block on the Commercial page.
+ *
+ * @param array    $query Array containing parameters for `WP_Query` as parsed by the block context.
+ * @param WP_Block $block Block instance.
+ *
+ * @return array
+ */
+function modify_query_loop_block_query_vars( $query, $block ) {
+	if ( 'helphub_article' === $block->context['query']['postType'] ) {
+		$query['orderby'] = array(
+			'menu_order' => 'desc',
+			'title' => 'asc',
+		);
+	}
+
+	return $query;
 }
 
 /**
