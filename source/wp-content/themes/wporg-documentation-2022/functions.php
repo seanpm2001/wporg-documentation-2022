@@ -4,6 +4,9 @@ namespace WordPressdotorg\Theme\Documentation_2022;
 
 use WP_Block_Supports;
 
+// Block files
+require_once( __DIR__ . '/src/article-list/index.php' );
+
 /**
  * Actions and filters.
  */
